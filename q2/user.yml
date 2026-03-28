@@ -1,0 +1,3 @@
+myusers:
+        - name: bob
+          group: developer
