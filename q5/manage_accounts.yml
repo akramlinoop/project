@@ -1,0 +1,18 @@
+---
+- name: manage accounts
+  hosts: all
+  become: true
+  vars_files: 
+      - user_information.yml
+  tasks:
+          - name: add the users
+            ansible.builtin.user:
+                  name: "{{ item.name }}"
+                  comment: "{{ item.first | capitalize }} {{ item.middle | default('') }} {{ item.last | capitalize }}"
+                  uid: "{{ item.uid }}"
+                  password: "{{ lookup('ansible.builtin.password', '/root/project/q5/password-{{ item.name }} length=6') | password_hash('sha512') }}"
+                  update_password: on_create
+                  state: present
+            loop: "{{ myusers }}"
+
+

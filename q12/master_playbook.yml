@@ -1,0 +1,12 @@
+---
+ - name: copying files
+   hosts: all
+   vars:
+           content: "Welcome"
+           file: imran.txt
+           directory: /tmp/
+   tasks:
+           - name: calling variable contents
+             ansible.builtin.copy:
+                     content: "{{ content }}"
+                     dest: "{{ directory }}{{ file }}"

@@ -1,0 +1,19 @@
+---
+- name: Update httpd and restart if needed
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Update httpd package
+      yum:
+        name: httpd
+        state: latest
+      notify: httpd restart
+
+  handlers:
+    - name: Restart service httpd, in all cases
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+
+
