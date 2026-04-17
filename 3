@@ -1,0 +1,10 @@
+---
+- name: play to run a banner
+  hosts: all
+  become: true
+  tasks:
+          - name: Copy using inline content
+            ansible.builtin.copy:
+                  content: 'the sun comes up and then it goes down'
+                  dest: /etc/motd.d/banner
+

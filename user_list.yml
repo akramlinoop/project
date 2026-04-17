@@ -1,0 +1,4 @@
+---
+myuser:
+        - name: bob
+          group: developer
