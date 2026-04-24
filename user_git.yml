@@ -1,0 +1,11 @@
+---
+users:
+                     - name: imran
+                       group: developer
+                     - name: harry
+                       group: manager
+                     - name: yasir
+                       group: developer
+                     - name: irfan
+                       group: manager
+

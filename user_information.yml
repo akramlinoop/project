@@ -1,0 +1,11 @@
+myusers:
+- name: abc
+  uid: 1043
+  first: abc
+  last: dc
+  middle: ''
+- name: xyz
+  uid: 1032
+  first: xyz
+  last: cd
+  middle: BR

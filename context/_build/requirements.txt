@@ -1,3 +1,0 @@
-#python dependencies
-python36[platform:rpm]
-python3-ldap[platform:rpm]
