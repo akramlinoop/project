@@ -1,0 +1,12 @@
+myusers:
+- name: abid
+  uid: 1045
+  first: abid
+  last: ahmed
+  middle: dead
+- name: Hasan
+  uid: 1035
+  first: Hasan
+  last: ayoub
+  middle: live
+

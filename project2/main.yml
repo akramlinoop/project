@@ -1,0 +1,12 @@
+---
+- name: creating a playbook for banner
+  hosts: all
+  become: true
+  tasks:
+          - name: banner
+            ansible.builtin.copy:
+                content: |
+                 This file was moved to Lahore
+                dest: /etc/mine.conf
+
+

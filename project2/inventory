@@ -1,0 +1,6 @@
+[dev]
+ansibleclient.example.com
+
+[test]
+ansibleclient.example.com
+
